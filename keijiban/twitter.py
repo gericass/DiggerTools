@@ -6,7 +6,7 @@ from keijiban.models import Tweet,ID
 import re
 import urllib
 import tweepy
-
+from keijiban.models import Tweet
 
 class tweet:
 
