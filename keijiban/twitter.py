@@ -41,8 +41,8 @@ class tweet:
 
   try:
    u = str(username)
-   saveid = ID(USERID=u)
-   saveid.save()
+   #saveid = ID(USERID=u)
+   #saveid.save()
 
    firsttweets = api.user_timeline(str(username),count=1,include_rts='false',exclude_replies='false')
 

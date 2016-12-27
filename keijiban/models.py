@@ -13,6 +13,6 @@ class Tweet(models.Model):
 
 
 class ID(models.Model):
-    USERID = models.CharField('id',max_length=500,default = 'NOTHING')
+    USERID = models.ForeignKey(Tweet)
     def __str__(self):
         return self.USERID
