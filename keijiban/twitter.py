@@ -5,7 +5,7 @@ from django.db import connection
 from keijiban.models import Tweet,ID
 import re
 import urllib
-
+import tweepy
 
 
 class tweet:

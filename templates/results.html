@@ -29,11 +29,11 @@
       </tr>
      </thead>
      <tbody>
-     {%  for USERID in tweets %}
+     {%  for tweet in tweets %}
      <tr>
-         <td scope="row", class = 'cell'>{{ USERID.twilink|safe }}</td>
-         <td scope="row", class = 'text'>{{ USERID.twidata }}</td>
-         <td scope="row", class = 'cell'><a style="vertical-align:middle; display: block; width: 100%; height: 100%" href="{{ USERID.twiurl|safe }}"target="_blank">{{ USERID.twiurl|safe }}</a></td>
+         <td scope="row", class = 'cell'>{{ tweet.twilink|safe }}</td>
+         <td scope="row", class = 'text'>{{ tweet.twidata }}</td>
+         <td scope="row", class = 'cell'><a style="vertical-align:middle; display: block; width: 100%; height: 100%" href="{{ tweet.twiurl|safe }}"target="_blank">{{ tweet.twiurl|safe }}</a></td>
      </tr>
      {% endfor %}
      </tbody>

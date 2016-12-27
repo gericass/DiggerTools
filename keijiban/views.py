@@ -6,6 +6,8 @@ from keijiban.twitter import tweet
 from keijiban.models import Tweet,ID
 from django.template.loader import get_template
 # Create your views here.
+from keijiban.twitter import tweet
+
 
 def kakikomi(request):
   if request.method=='POST':
