@@ -1,0 +1,98 @@
+body {background-color: #edf2f9;color:#000000;font-family: "Meiryo UI"}
+
+div#header-fixed
+{
+    position: fixed;            /* ヘッダーの固定 */
+    top: 0px;                   /* 位置(上0px) */
+    left: 0px;                  /* 位置(右0px) */
+    width: 100%;                /* 横幅100%　*/
+    height: 20px;              /* 縦幅140px */
+    z-index: 5;
+    box-shadow:2px 2px 1px #b4bfc1;
+
+}
+
+
+div#header-bk {
+    background-color:#ffffff;     /* 背景色 */
+    padding:10px 0 20px;       /* 上10px、下20pxをあける */
+    height:20px;              /* 縦の高さ110px */
+    width:100%;                /* 横の幅を100% */
+    z-index: 5;
+    box-shadow:2px 2px 1px #b4bfc1;
+
+}
+
+
+div#header {
+    border: 5px solid #fff;    /* 表示領域を白枠で囲う */
+    height: 100%;              /* 縦の表示領域はheader-bkと同じ */
+    width: 960px;              /* 横の幅970px */
+    margin: auto;              /* 中央揃え */
+    z-index: 5;
+}
+
+
+
+
+table.type02 {
+    border-collapse: collapse;
+    border-collapse: separate;
+    border-spacing : 2px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 1.5;
+   /* border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;*/
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+
+}
+table.type02 th {
+    width: 100px;
+    /*margin: 100px;*/
+    padding: 30px;
+    font-weight: bold;
+    /*vertical-align: center;*/
+    border-right: 0px solid #ccc;
+    border-bottom: 0px solid #ccc;
+    border-top: 0px solid #fff;
+    border-left: 0px solid #fff;
+    background: #89d3ff;
+}
+table.type02 td {
+
+    width: 350px;
+    height: 200px;
+    /*margin: 100px;*/
+    line-height: 50px;
+    border-right: 0px solid #ccc;
+    border-bottom: 0px solid #ccc;
+    background: #B3F1FB;
+    opacity:0.9;
+
+}
+
+table.type2 td a{
+    display: block;
+    width:100%;
+    height:100%;
+    line-height: 70px;
+    text-decolation: none;
+}
+
+.cell:hover{
+    opacity:0.2;
+}
+
+
+
+.text{
+    background: #B3F1FB;
+    opacity:0.9;
+}
+
+#url{
+    text-decoration: none;
+}

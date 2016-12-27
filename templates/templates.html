@@ -1,0 +1,29 @@
+﻿<html>
+<head>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'keijiban/Toppage.css' %}" />
+ <title>TubeCloud</title>
+</head>
+<body>
+<div id="header-fixed">
+    <div id="header-bk">
+        <div id="header">指定したユーザーのYoutube SoundCloud Spotify iTunesのツイートを検索できます</div>
+    </div>
+</div>
+
+<
+
+ <form action=""method="post">
+    {% csrf_token %}
+   <div id="position">
+       <p>{{form1}}</p>
+   <input id="button" type="submit"value="検索">
+   </div>
+ </form>
+
+
+
+<p class="pos"><h2 style="text-align:center; color:#B01A1A">※ツイートの取得にはめちゃくちゃ時間がかかります（数分）</h2></p>
+
+</body>
+</html>
