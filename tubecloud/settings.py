@@ -170,5 +170,5 @@ STATICFILES_DIRS = (
 
 
 #追加した
-STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+#STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 #-------------
