@@ -160,7 +160,7 @@ STATIC_ROOT = os.path.join(PROJECT_ROOT,'staticfiles')
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
-    os.path.join(PROJECT_ROOT, "static"), #PROJECT_ROOTはBASE_DIRだった
+    os.path.join(PROJECT_ROOT, "tubecloud/static"), #PROJECT_ROOTはBASE_DIRだった
 )
 
 #STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
