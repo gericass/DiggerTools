@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="38ec5e0a-2782-4804-8e7b-7d3554f3027c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/keijiban/twitter.py" afterPath="$PROJECT_DIR$/keijiban/twitter.py" />
-    </list>
+    <list default="true" id="38ec5e0a-2782-4804-8e7b-7d3554f3027c" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -965,12 +963,12 @@
       <workItem from="1482575625351" duration="10672000" />
       <workItem from="1482637207183" duration="83049000" />
       <workItem from="1482768958181" duration="30325000" />
-      <workItem from="1482854660776" duration="12915000" />
+      <workItem from="1482854660776" duration="13074000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="136961000" />
+    <option name="totallyTimeSpent" value="137120000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
