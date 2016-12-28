@@ -32,7 +32,7 @@ PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 SECRET_KEY = 'auojyd0zvka_3)4c@ztdz-rai$na2bd5iu(j%72-*(5el*hl3p'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 #コメントアウトした
 #ALLOWED_HOSTS = []
@@ -47,8 +47,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
 
-    'whitenoise.runserver_nostatic',
-
     'django.contrib.staticfiles',
     'keijiban'
 ]
@@ -62,8 +60,6 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
-
-    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'tubecloud.urls'
@@ -160,9 +156,12 @@ ALLOWED_HOSTS = ['*']
 # Static asset configuration
 
 
-STATIC_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__))) #os.path.join(BASE_DIR,'static')#PROJECT_ROOTはBASE_DIRだった
+STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')#PROJECT_ROOTはBASE_DIRだった
 
-STATIC_URL = 'static/'
+
+
+
+STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"), #PROJECT_ROOTはBASE_DIRだった
