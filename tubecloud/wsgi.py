@@ -22,6 +22,7 @@ os.environ.setdefault("DJANGO_SETTINGS_MODULE", "tubecloud.settings")
 application = Cling(get_wsgi_application())
 #application = DjangoWhiteNoise(application)
 
+'''
 import os
 
 from django.core.wsgi import get_wsgi_application
