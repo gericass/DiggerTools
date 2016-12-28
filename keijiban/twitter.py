@@ -7,6 +7,10 @@ import re
 import urllib
 import tweepy
 from keijiban.models import Tweet
+import re
+import urllib
+
+
 
 class tweet:
 
@@ -35,12 +39,12 @@ class tweet:
  #dbに以前格納したついーとの削除
   delete = Tweet.objects.all()
   delete.delete()
-  delete2 = ID.objects.all()
-  delete2.delete()
+  '''delete2 = ID.objects.all()
+  delete2.delete()'''
  #------------------------------
 
   try:
-   u = str(username)
+   #u = str(username)
    #saveid = ID(USERID=u)
    #saveid.save()
 

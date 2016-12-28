@@ -7,7 +7,9 @@ from keijiban.models import Tweet,ID
 from django.template.loader import get_template
 # Create your views here.
 from keijiban.twitter import tweet
-
+from django.http import HttpResponseRedirect
+from django.shortcuts import render
+from keijiban.forms import idkakikomi
 
 def kakikomi(request):
   if request.method=='POST':
@@ -30,7 +32,7 @@ def kakikomi(request):
 
 def results(request):
     tweets = Tweet.objects.all().order_by('id')
-    id = ID.objects.all()
+   # id = ID.objects.all()
 
     return render(request,'results.html',{'tweets':tweets})
 
