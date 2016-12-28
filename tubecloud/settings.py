@@ -157,7 +157,7 @@ ALLOWED_HOSTS = ['*']
 # Static asset configuration
 
 
-STATIC_ROOT = BASE_DIR   #os.path.join(BASE_DIR,'static')#PROJECT_ROOTはBASE_DIRだった
+STATIC_ROOT = os.path.join(BASE_DIR,'static')#PROJECT_ROOTはBASE_DIRだった
 
 
 
@@ -170,5 +170,5 @@ STATICFILES_DIRS = (
 
 
 #追加した
-STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+#STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 #-------------
