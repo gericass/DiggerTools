@@ -1,1 +1,1 @@
-﻿web: gunicorn tubecloud.wsgi --log-file -
+﻿web: gunicorn --env DJANGO_SETTINGS_MODULE=tubecloud.settings tubecloud.wsgi --log-file -
