@@ -160,8 +160,8 @@ STATIC_ROOT = os.path.join(PROJECT_ROOT,'staticfiles')
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
-    os.path.join(PROJECT_ROOT, "/static"), #PROJECT_ROOTはBASE_DIRだった
+    os.path.join(PROJECT_ROOT, "/static/"), #PROJECT_ROOTはBASE_DIRだった
 )
 
 #STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-#STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
