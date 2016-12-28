@@ -67,8 +67,8 @@
       <file leaf-file-name="wsgi.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tubecloud/wsgi.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+            <state relative-caret-position="612">
+              <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding>
                 <element signature="e#226#235#0" expanded="true" />
               </folding>
@@ -79,8 +79,8 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tubecloud/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="168" column="72" lean-forward="true" selection-start-line="168" selection-start-column="72" selection-end-line="168" selection-end-column="72" />
+            <state relative-caret-position="470">
+              <caret line="166" column="0" lean-forward="true" selection-start-line="166" selection-start-column="0" selection-end-line="166" selection-end-column="0" />
               <folding>
                 <element signature="e#314#336#0" expanded="true" />
               </folding>
@@ -143,8 +143,8 @@
         <option value="$PROJECT_DIR$/tubecloud/urls.py" />
         <option value="$PROJECT_DIR$/keijiban/urls.py" />
         <option value="$PROJECT_DIR$/templates/templates.html" />
-        <option value="$PROJECT_DIR$/tubecloud/wsgi.py" />
         <option value="$PROJECT_DIR$/tubecloud/settings.py" />
+        <option value="$PROJECT_DIR$/tubecloud/wsgi.py" />
       </list>
     </option>
   </component>
@@ -956,12 +956,12 @@
       <workItem from="1482637207183" duration="83049000" />
       <workItem from="1482768958181" duration="30325000" />
       <workItem from="1482854660776" duration="23937000" />
-      <workItem from="1482916583477" duration="14608000" />
+      <workItem from="1482916583477" duration="14795000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="162591000" />
+    <option name="totallyTimeSpent" value="162778000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -1373,8 +1373,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tubecloud/wsgi.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+        <state relative-caret-position="612">
+          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding>
             <element signature="e#226#235#0" expanded="true" />
           </folding>
@@ -1383,8 +1383,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tubecloud/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="168" column="72" lean-forward="true" selection-start-line="168" selection-start-column="72" selection-end-line="168" selection-end-column="72" />
+        <state relative-caret-position="470">
+          <caret line="166" column="0" lean-forward="true" selection-start-line="166" selection-start-column="0" selection-end-line="166" selection-end-column="0" />
           <folding>
             <element signature="e#314#336#0" expanded="true" />
           </folding>
