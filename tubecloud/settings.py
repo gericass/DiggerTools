@@ -14,6 +14,7 @@ https://docs.djangoproject.com/en/1.10/ref/settings/
 import dj_database_url
 import os
 
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 
 
@@ -169,5 +170,5 @@ STATICFILES_DIRS = (
 
 
 #追加した
-#STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 #-------------
