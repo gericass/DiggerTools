@@ -22,7 +22,7 @@ from tubecloud import settings
 
 
 urlpatterns = [
-   
+
     url(r'^admin/', admin.site.urls),
     url(r'^keijiban/', include('keijiban.urls')),
 ]
