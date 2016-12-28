@@ -58,7 +58,7 @@ class tweet:
 
 
 
-   for i in range(1):
+   for i in range(2):
      tweets = api.user_timeline(str(username),count = 200,max_id=first_id,include_rts='false',exclude_replies='false')
      for t in tweets:
          t_json = t._json      # statusおぶじぇくとをjson(dict)にへんかん
