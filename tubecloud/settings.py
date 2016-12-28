@@ -160,7 +160,7 @@ ALLOWED_HOSTS = ['*']
 # Static asset configuration
 
 
-STATIC_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))) #os.path.join(BASE_DIR,'static')#PROJECT_ROOTはBASE_DIRだった
+STATIC_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__))) #os.path.join(BASE_DIR,'static')#PROJECT_ROOTはBASE_DIRだった
 
 STATIC_URL = 'static/'
 
