@@ -19,7 +19,7 @@ import os
 
 
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 #いじった
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 #ここまで
@@ -170,5 +170,5 @@ STATICFILES_DIRS = (
 
 #STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 #追加した
-STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+#STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 #-------------
