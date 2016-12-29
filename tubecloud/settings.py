@@ -21,7 +21,7 @@ import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 #いじった
-PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 #ここまで
 
 
@@ -157,7 +157,7 @@ ALLOWED_HOSTS = ['*']
 # Static asset configuration
 
 
-STATIC_ROOT = BASE_DIR#os.path.join(BASE_DIR,'static')#PROJECT_ROOTはBASE_DIRだった
+STATIC_ROOT = os.path.join(PROJECT_ROOT,'staticfiles')#PROJECT_ROOTはBASE_DIRだった
 
 
 
@@ -165,10 +165,10 @@ STATIC_ROOT = BASE_DIR#os.path.join(BASE_DIR,'static')#PROJECT_ROOTはBASE_DIR�
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, "static"), #PROJECT_ROOTはBASE_DIRだった
+    os.path.join(PROJECT_ROOT, "static"), #PROJECT_ROOTはBASE_DIRだった
 )
 
 #STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 #追加した
-#STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 #-------------
