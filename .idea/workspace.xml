@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38ec5e0a-2782-4804-8e7b-7d3554f3027c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tubecloud/settings.py" afterPath="$PROJECT_DIR$/tubecloud/settings.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tubecloud/wsgi.py" afterPath="$PROJECT_DIR$/tubecloud/wsgi.py" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -66,7 +65,7 @@
         <entry file="file://$PROJECT_DIR$/tubecloud/wsgi.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="504">
-              <caret line="37" column="1" lean-forward="false" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
+              <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -985,12 +984,12 @@
       <workItem from="1482854660776" duration="23937000" />
       <workItem from="1482916583477" duration="25957000" />
       <workItem from="1483276340445" duration="687000" />
-      <workItem from="1483277266049" duration="6232000" />
+      <workItem from="1483277266049" duration="6357000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="180859000" />
+    <option name="totallyTimeSpent" value="180984000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -1397,7 +1396,7 @@
     <entry file="file://$PROJECT_DIR$/tubecloud/wsgi.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
-          <caret line="37" column="1" lean-forward="false" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
+          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
           <folding />
         </state>
       </provider>
