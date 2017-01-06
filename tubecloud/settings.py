@@ -71,8 +71,8 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            os.path.join(BASE_DIR,'templates'),
-            os.path.join(BASE_DIR, "static"),
+            os.path.join(PROJECT_ROOT,'templates'),#BASE_DIRだった
+            os.path.join(PROJECT_ROOT, "static"),#BASE_DIR
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -159,15 +159,15 @@ ALLOWED_HOSTS = ['*']
 # Static asset configuration
 
 
-STATIC_ROOT = os.path.join(PROJECT_ROOT,'staticfiles')#PROJECT_ROOTはBASE_DIRだった
+#STATIC_ROOT = os.path.join(PROJECT_ROOT,'staticfiles')#PROJECT_ROOTはBASE_DIRだった
 
 
-
+STATIC_ROOT = 'staticfiles'
 
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, "static"), #PROJECT_ROOTはBASE_DIRだった
+    os.path.join(PROJECT_ROOT, "static"), #PROJECT_ROOTはBASE_DIRだった
 )
 
 #STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
