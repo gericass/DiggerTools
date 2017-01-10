@@ -62,7 +62,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
+    #'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'tubecloud.urls'
@@ -71,8 +71,8 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            os.path.join(PROJECT_ROOT,'templates'),#BASE_DIRだった
-            os.path.join(PROJECT_ROOT, "static"),#BASE_DIR
+            os.path.join(BASE_DIR,'templates'),#BASE_DIRだった
+            os.path.join(BASE_DIR, "static"),#BASE_DIR
         ],
         'APP_DIRS': True,
         'OPTIONS': {
