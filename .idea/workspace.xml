@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="38ec5e0a-2782-4804-8e7b-7d3554f3027c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tubecloud/settings.py" afterPath="$PROJECT_DIR$/tubecloud/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tubecloud/wsgi.py" afterPath="$PROJECT_DIR$/tubecloud/wsgi.py" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -85,7 +86,7 @@
         <entry file="file://$PROJECT_DIR$/tubecloud/wsgi.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="504">
-              <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+              <caret line="37" column="1" lean-forward="false" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -94,8 +95,8 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tubecloud/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="166" column="23" lean-forward="true" selection-start-line="166" selection-start-column="23" selection-end-line="166" selection-end-column="23" />
+            <state relative-caret-position="504">
+              <caret line="175" column="1" lean-forward="false" selection-start-line="175" selection-start-column="1" selection-end-line="175" selection-end-column="1" />
               <folding>
                 <element signature="e#314#336#0" expanded="true" />
               </folding>
@@ -158,8 +159,8 @@
         <option value="$PROJECT_DIR$/templates/inee.html" />
         <option value="$PROJECT_DIR$/templates/templates.html" />
         <option value="$PROJECT_DIR$/templates/results.html" />
-        <option value="$PROJECT_DIR$/tubecloud/wsgi.py" />
         <option value="$PROJECT_DIR$/tubecloud/settings.py" />
+        <option value="$PROJECT_DIR$/tubecloud/wsgi.py" />
       </list>
     </option>
   </component>
@@ -975,12 +976,12 @@
       <workItem from="1482854660776" duration="23937000" />
       <workItem from="1482916583477" duration="25957000" />
       <workItem from="1483276340445" duration="687000" />
-      <workItem from="1483277266049" duration="17587000" />
+      <workItem from="1483277266049" duration="17781000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="192214000" />
+    <option name="totallyTimeSpent" value="192408000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -1379,15 +1380,15 @@
     <entry file="file://$PROJECT_DIR$/tubecloud/wsgi.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
-          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <caret line="37" column="1" lean-forward="false" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tubecloud/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="166" column="23" lean-forward="true" selection-start-line="166" selection-start-column="23" selection-end-line="166" selection-end-column="23" />
+        <state relative-caret-position="504">
+          <caret line="175" column="1" lean-forward="false" selection-start-line="175" selection-start-column="1" selection-end-line="175" selection-end-column="1" />
           <folding>
             <element signature="e#314#336#0" expanded="true" />
           </folding>
