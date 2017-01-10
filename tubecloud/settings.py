@@ -159,12 +159,12 @@ ALLOWED_HOSTS = ['*']
 # Static asset configuration
 
 
-STATIC_ROOT = os.path.join(PROJECT_ROOT,'staticfiles')#PROJECT_ROOTはBASE_DIRだった
+STATIC_ROOT = 'staticfiles'#os.path.join(PROJECT_ROOT,'staticfiles')#PROJECT_ROOTはBASE_DIRだった
 
 
 #STATIC_ROOT = 'staticfiles'
 
-STATIC_URL = 'app/tubecloud/staticfiles/'
+STATIC_URL = '/static/'
 
 
 STATICFILES_DIRS = (
@@ -173,5 +173,5 @@ STATICFILES_DIRS = (
 
 #STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 #追加した
-#STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 #-------------
