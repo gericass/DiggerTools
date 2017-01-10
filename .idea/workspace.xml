@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="38ec5e0a-2782-4804-8e7b-7d3554f3027c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tubecloud/settings.py" afterPath="$PROJECT_DIR$/tubecloud/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tubecloud/wsgi.py" afterPath="$PROJECT_DIR$/tubecloud/wsgi.py" />
-    </list>
+    <list default="true" id="38ec5e0a-2782-4804-8e7b-7d3554f3027c" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -990,12 +987,12 @@
       <workItem from="1482854660776" duration="23937000" />
       <workItem from="1482916583477" duration="25957000" />
       <workItem from="1483276340445" duration="687000" />
-      <workItem from="1483277266049" duration="15503000" />
+      <workItem from="1483277266049" duration="15750000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="190130000" />
+    <option name="totallyTimeSpent" value="190377000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
