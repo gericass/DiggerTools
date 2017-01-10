@@ -164,7 +164,7 @@ STATIC_ROOT = os.path.join(PROJECT_ROOT,'staticfiles')#PROJECT_ROOT„ÅØBASE_DIR„Å
 
 #STATIC_ROOT = 'staticfiles'
 
-STATIC_URL = '/static/'
+STATIC_URL = '/staticfiles/'
 
 
 STATICFILES_DIRS = (
