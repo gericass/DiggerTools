@@ -10,19 +10,17 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.10/ref/settings/
 """
 
-
 import dj_database_url
 import os
-
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 
 
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-#いじった
+# いじった
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
-#ここまで
+# ここまで
 
 
 
@@ -35,9 +33,9 @@ SECRET_KEY = 'auojyd0zvka_3)4c@ztdz-rai$na2bd5iu(j%72-*(5el*hl3p'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-#コメントアウトした
-#ALLOWED_HOSTS = []
-#ここまで
+# コメントアウトした
+# ALLOWED_HOSTS = []
+# ここまで
 
 # Application definition
 
@@ -71,8 +69,8 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            os.path.join(BASE_DIR,'templates'),#BASE_DIRだった
-            os.path.join(BASE_DIR, "static"),#BASE_DIR
+            os.path.join(BASE_DIR, 'templates'),  # BASE_DIRだった
+            os.path.join(BASE_DIR, "static"),  # BASE_DIR
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -88,7 +86,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'tubecloud.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
 
@@ -100,9 +97,8 @@ DATABASES = {
         'PORT': '5432',
         'USER': 'postgres',
         'PASSWORD': 'Keita9156'
-                           }
+    }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/1.10/ref/s
@@ -123,7 +119,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/1.10/topics/i18n/
 
@@ -137,41 +132,37 @@ USE_L10N = True
 
 USE_TZ = True
 
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 
-#追加した
-DATABASES['default'] =  dj_database_url.config()
-#-----------
+# 追加した
+DATABASES['default'] = dj_database_url.config()
+# -----------
 
 # Honor the 'X-Forwarded-Proto' header for request.is_secure()
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
-
 # Allow all host headers
 
-#追加した
+# 追加した
 ALLOWED_HOSTS = ['*']
-#-----------
+# -----------
 
 # Static asset configuration
 
 
-STATIC_ROOT = os.path.join(PROJECT_ROOT,'staticfiles')#PROJECT_ROOTはBASE_DIRだった
+STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')  # PROJECT_ROOTはBASE_DIRだった
 
-
-#STATIC_ROOT = 'staticfiles'
+# STATIC_ROOT = 'staticfiles'
 
 STATIC_URL = '/static/'
 
-
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'), #PROJECT_ROOTはBASE_DIRだった
+    os.path.join(BASE_DIR, 'static'),  # PROJECT_ROOTはBASE_DIRだった
 )
 
-#STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-#追加した
-#STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
-#-------------
+# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+# 追加した
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+# -------------
