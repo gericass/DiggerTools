@@ -70,9 +70,10 @@ ROOT_URLCONF = 'tubecloud.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [
+        'DIRS': ['''
             os.path.join(BASE_DIR,'templates'),#BASE_DIRだった
             os.path.join(BASE_DIR, "static"),#BASE_DIR
+            '''
         ],
         'APP_DIRS': True,
         'OPTIONS': {
