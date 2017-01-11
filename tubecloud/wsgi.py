@@ -35,4 +35,4 @@ from whitenoise.django import DjangoWhiteNoise
 
 
 application = get_wsgi_application()
-#pplication = DjangoWhiteNoise(application)
+pplication = DjangoWhiteNoise(application)
