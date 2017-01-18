@@ -157,7 +157,7 @@ STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')  # PROJECT_ROOTはBASE_D
 
 # STATIC_ROOT = 'staticfiles'
 
-STATIC_URL = '/static/'
+STATIC_URL = os.path.join(PROJECT_ROOT, 'staticfiles') #'/static/'
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),  # PROJECT_ROOTはBASE_DIRだった
