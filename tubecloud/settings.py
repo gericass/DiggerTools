@@ -161,6 +161,7 @@ STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),  # PROJECT_ROOTはBASE_DIRだった
+    os.path.join(BASE_DIR, 'templates'),  # BASE_DIRだった
 )
 
 #STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
