@@ -34,7 +34,7 @@ SECRET_KEY = 'auojyd0zvka_3)4c@ztdz-rai$na2bd5iu(j%72-*(5el*hl3p'
 DEBUG = False
 
 # コメントアウトした
-# ALLOWED_HOSTS = []
+#ALLOWED_HOSTS = []
 # ここまで
 
 # Application definition
@@ -70,7 +70,7 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
             os.path.join(BASE_DIR, 'templates'),  # BASE_DIRだった
-            os.path.join(BASE_DIR, "static"),  # BASE_DIR
+            #os.path.join(BASE_DIR, "static"),  # BASE_DIR
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -136,6 +136,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 
+
 # 追加した
 DATABASES['default'] = dj_database_url.config()
 # -----------
@@ -152,7 +153,7 @@ ALLOWED_HOSTS = ['*']
 # Static asset configuration
 
 
-STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')  # PROJECT_ROOTはBASE_DIRだった
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # PROJECT_ROOTはBASE_DIRだった
 
 # STATIC_ROOT = 'staticfiles'
 
@@ -164,5 +165,5 @@ STATICFILES_DIRS = (
 
 # STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # 追加した
-#STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 # -------------
