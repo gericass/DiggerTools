@@ -59,10 +59,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/keijiban/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-34">
+            <state relative-caret-position="-74">
               <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
             </state>
@@ -99,11 +99,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tubecloud/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
-              <caret line="163" column="55" lean-forward="false" selection-start-line="163" selection-start-column="55" selection-end-line="163" selection-end-column="55" />
+            <state relative-caret-position="402">
+              <caret line="162" column="65" lean-forward="false" selection-start-line="162" selection-start-column="65" selection-end-line="162" selection-end-column="65" />
               <folding>
                 <element signature="e#313#335#0" expanded="true" />
               </folding>
@@ -1001,15 +1001,15 @@
       <workItem from="1482854660776" duration="23937000" />
       <workItem from="1482916583477" duration="25957000" />
       <workItem from="1483276340445" duration="687000" />
-      <workItem from="1483277266049" duration="34301000" />
+      <workItem from="1483277266049" duration="34468000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="208928000" />
+    <option name="totallyTimeSpent" value="209095000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1407,21 +1407,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tubecloud/settings.py">
+    <entry file="file://$PROJECT_DIR$/keijiban/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="163" column="55" lean-forward="false" selection-start-line="163" selection-start-column="55" selection-end-line="163" selection-end-column="55" />
-          <folding>
-            <element signature="e#313#335#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-74">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/keijiban/views.py">
+    <entry file="file://$PROJECT_DIR$/tubecloud/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-34">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="402">
+          <caret line="162" column="65" lean-forward="false" selection-start-line="162" selection-start-column="65" selection-end-line="162" selection-end-column="65" />
+          <folding>
+            <element signature="e#313#335#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
