@@ -155,9 +155,9 @@ ALLOWED_HOSTS = ['*']
 
 STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')  # PROJECT_ROOTはBASE_DIRだった
 
-#STATIC_ROOT = 'staticfiles'
+STATIC_URL = 'tubecloud/staticfiles/'
 
-STATIC_URL = '/static/'
+#STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),  # PROJECT_ROOTはBASE_DIRだった
