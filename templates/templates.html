@@ -1,8 +1,119 @@
 ﻿<html>
 <head>
     {% load static %}
-    <link rel="stylesheet" type="text/css" href="{%  static 'Toppage.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{{STATIC_URL}}Toppage.css" />
  <title>TubeCloud</title>
+
+  <style>
+      body {background-color: #719FB5;color:#000000;font-family: "Meiryo UI"}
+
+      div#header-fixed
+      {
+          position: fixed;            /* ヘッダーの固定 */
+          top: 0px;                   /* 位置(上0px) */
+          left: 0px;                  /* 位置(右0px) */
+          width: 100%;                /* 横幅100%　*/
+          height: 20px;              /* 縦幅140px */
+          z-index: 5;
+          box-shadow:2px 2px 1px #b4bfc1;
+
+      }
+
+
+      div#header-bk {
+          background-color:#ffffff;     /* 背景色 */
+          padding:10px 0 20px;       /* 上10px、下20pxをあける */
+          height:20px;              /* 縦の高さ110px */
+          width:100%;                /* 横の幅を100% */
+          z-index: 5;
+          box-shadow:2px 2px 1px #b4bfc1;
+
+      }
+
+
+      div#header {
+          border: 5px solid #fff;    /* 表示領域を白枠で囲う */
+          height: 100%;              /* 縦の表示領域はheader-bkと同じ */
+          width: 960px;              /* 横の幅970px */
+          margin: auto;              /* 中央揃え */
+          text-align: center;
+          z-index: 5;
+      }
+
+
+
+      .text{
+
+          text-align: center;
+
+
+
+      }
+
+      div#position{
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          margin: auto;
+          width:150px;
+          height:50px;
+      }
+
+      input#button{
+          position: relative;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          margin: auto;
+          width:150px;
+          height:50px;
+          color:#1C36DF;
+          /* 文字サイズを1.4emに指定 */
+          font-size: 1.4em;
+
+          /* 文字の太さをboldに指定 */
+          font-weight: bold;
+
+          /* 縦方向に10px、
+           * 横方向に30pxの余白を指定 */
+          padding: 10px 30px;
+
+          /* 背景色を濃い青色に指定 */
+          background-color: #248;
+
+          /* 文字色を白色に指定 */
+          color: #fff;
+
+          /* ボーダーをなくす */
+          border-style: none;
+      }
+
+      .pos{
+          position: relative;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          margin: auto;
+          width:150px;
+          height:100px;
+      }
+
+      input#button:hover {
+          /* 背景色を明るい青色に指定 */
+          background-color: #24d;
+
+          /* 文字色を白色に指定 */
+          color: #fff;
+      }
+
+
+
+
+  </style>
 </head>
 <body>
 <div id="header-fixed">
