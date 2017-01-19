@@ -138,7 +138,6 @@ class tweet:
 
 
 
-
      except urllib.error.HTTPError: #404が返ってきたときはパスする
          pass
 
