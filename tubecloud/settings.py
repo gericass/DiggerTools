@@ -155,7 +155,7 @@ ALLOWED_HOSTS = ['*']
 
 STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')  # PROJECT_ROOTはBASE_DIRだった
 
-STATIC_URL = '/static/'
+STATIC_URL = '/keijiban/idinput/results/'
 
 #STATIC_URL = '/static/'
 
