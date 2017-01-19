@@ -108,6 +108,11 @@ class tweet:
          sldlink.append('<a style="vertical-align:middle; display: block; width: 100%; height: 100%" href="http://twitter.com/'+str(username)+'/status/'+str(gotid[i])+'"target="_blank">Twitter</a>')
          sldurl.append(enc)
 
+        elif 'bandcamp.com' in enc:
+         sldtwe.append(gotwe[i])
+         sldlink.append('<a style="vertical-align:middle; display: block; width: 100%; height: 100%" href="http://twitter.com/'+str(username)+'/status/'+str(gotid[i])+'"target="_blank">Twitter</a>')
+         sldurl.append(enc)
+
       if n:#gotweにpattern2があった場合
        q = n.group(0)#.replace(' ','')
        r = zenkaku.search(q)
@@ -136,7 +141,10 @@ class tweet:
          sldlink.append('<a style="vertical-align:middle; display: block; width: 100%; height: 100%" href="http://twitter.com/'+str(username)+'/status/'+str(gotid[i])+'"target="_blank">Twitter</a>')
          sldurl.append(enc)
 
-
+        elif 'bandcamp.com' in enc:
+         sldtwe.append(gotwe[i])
+         sldlink.append('<a style="vertical-align:middle; display: block; width: 100%; height: 100%" href="http://twitter.com/'+str(username)+'/status/'+str(gotid[i])+'"target="_blank">Twitter</a>')
+         sldurl.append(enc)
 
      except urllib.error.HTTPError: #404が返ってきたときはパスする
          pass
