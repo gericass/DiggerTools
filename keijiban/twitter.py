@@ -29,10 +29,11 @@ class tweet:
   gotwe = []
   gotid = []
 #
+  noten = []#展開前のURLの格納
 
-  sldtwe =[] #取得したツイートからサンクラとyoutubeのツイートを取り出したやつを格納するやつ
-  sldlink = []#ついーとへのりんく
-  sldurl = []#ツイートに含まれているURLを展開したURL
+  sldtwe =[] #取得したツイートからサンクラとyoutubeのツイートを取り出したやつを格納するやつ(tweet1)
+  sldlink = []#ついーとへのりんく(link1)
+  sldurl = []#ツイートに含まれているURLを展開したURL(link2)
 
  #username = input()
 
@@ -64,11 +65,45 @@ class tweet:
          t_json = t._json      # statusおぶじぇくとをjson(dict)にへんかん
 
          #print(t_json["text"])
-         gotwe.append(str(t_json["text"]))
-         gotid.append(int(t_json["id"]))
+         ent = t_json['entities']
+         expurl = ent['urls']
+         if(len(expurl)!=0):
+           gotwe.append(str(t_json["text"]))
+           gotid.append(int(t_json["id"]))
+           exp = expurl[0]
+           noten.append(exp["expanded_url"])
+
          max_id = int(t_json["id"])
      first_id=max_id
 
+
+   for i in range(len(gotwe)):
+       if 'youtube.com' in noten[i]:
+        sldtwe.append(gotwe[i])
+        sldurl.append(noten[i])
+        sldlink.append(gotid[i])
+
+       elif 'bandcamp.com' in noten[i]:
+        sldtwe.append(gotwe[i])
+        sldurl.append(noten[i])
+        sldlink.append(gotid[i])
+
+       elif 'itun.es' in noten[i]:
+        sldtwe.append(gotwe[i])
+        sldurl.append(noten[i])
+        sldlink.append(gotid[i])
+
+       elif 'spoti.fy' in noten[i]:
+        sldtwe.append(gotwe[i])
+        sldurl.append(noten[i])
+        sldlink.append(gotid[i])
+
+       elif 'soundcloud.com' in noten[i]:
+        sldtwe.append(gotwe[i])
+        sldurl.append(noten[i])
+        sldlink.append(gotid[i])
+
+   '''
    pattern = re.compile("(https://.+ )") #最後に空白のあるURL
    pattern2 = re.compile('https://.+$',re.MULTILINE) #文末にあるURL
    zenkaku = re.compile(r'^[\x20-\x7E]+$')
@@ -148,6 +183,7 @@ class tweet:
 
      except urllib.error.HTTPError: #404が返ってきたときはパスする
          pass
+   '''
 
    #dbにツイートを格納
    for i in range(len(sldtwe)):
