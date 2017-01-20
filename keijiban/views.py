@@ -32,9 +32,10 @@ def kakikomi(request):
 
 def results(request):
     tweets = Tweet.objects.all().order_by('id')
+    userid = ID.objects.all()
    # id = ID.objects.all()
 
-    return render(request,'results.html',{'tweets':tweets})
+    return render(request,'results.html',{'tweets':tweets,'userid':userid})
 
 
 def inee(request):
