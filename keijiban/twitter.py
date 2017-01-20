@@ -40,8 +40,10 @@ class tweet:
  #dbに以前格納したついーとの削除
   delete = Tweet.objects.all()
   delete.delete()
+  '''
   delete2 = ID.objects.all()
   delete2.delete()
+  '''
  #------------------------------
 
   try:
@@ -193,9 +195,11 @@ class tweet:
        db = Tweet(twidata=t,twilink=l,twiurl=u) #'''id=i'''
        db.save()
 
+   '''
    uid = str(username)
    db2 = ID(USERID = uid)
    db2.save()
+   '''
 
    return 0;
   except tweepy.error.TweepError:
