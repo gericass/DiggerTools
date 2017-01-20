@@ -81,27 +81,27 @@ class tweet:
        if 'youtube.com' in noten[i]:
         sldtwe.append(gotwe[i])
         sldurl.append(noten[i])
-        sldlink.append(gotid[i])
+        sldlink.append('<a style="vertical-align:middle; display: block; width: 100%; height: 100%" href="http://twitter.com/'+str(username)+'/status/'+str(gotid[i])+'"target="_blank">Twitter</a>')
 
        elif 'bandcamp.com' in noten[i]:
         sldtwe.append(gotwe[i])
         sldurl.append(noten[i])
-        sldlink.append(gotid[i])
+        sldlink.append('<a style="vertical-align:middle; display: block; width: 100%; height: 100%" href="http://twitter.com/'+str(username)+'/status/'+str(gotid[i])+'"target="_blank">Twitter</a>')
 
        elif 'itun.es' in noten[i]:
         sldtwe.append(gotwe[i])
         sldurl.append(noten[i])
-        sldlink.append(gotid[i])
+        sldlink.append('<a style="vertical-align:middle; display: block; width: 100%; height: 100%" href="http://twitter.com/'+str(username)+'/status/'+str(gotid[i])+'"target="_blank">Twitter</a>')
 
        elif 'spoti.fy' in noten[i]:
         sldtwe.append(gotwe[i])
         sldurl.append(noten[i])
-        sldlink.append(gotid[i])
+        sldlink.append('<a style="vertical-align:middle; display: block; width: 100%; height: 100%" href="http://twitter.com/'+str(username)+'/status/'+str(gotid[i])+'"target="_blank">Twitter</a>')
 
        elif 'soundcloud.com' in noten[i]:
         sldtwe.append(gotwe[i])
         sldurl.append(noten[i])
-        sldlink.append(gotid[i])
+        sldlink.append('<a style="vertical-align:middle; display: block; width: 100%; height: 100%" href="http://twitter.com/'+str(username)+'/status/'+str(gotid[i])+'"target="_blank">Twitter</a>')
 
    '''
    pattern = re.compile("(https://.+ )") #最後に空白のあるURL
