@@ -21,10 +21,13 @@ from django.contrib import admin
 from tubecloud import settings
 from django.contrib import admin
 from django.conf.urls import url, include
+from keijiban import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^', include('keijiban.urls')),
+    url(r'^$', views.kakikomi),
+    url(r'^results/$',views.results),
+    url(r'^ineeyo/$',views.inee),
     '''
     url(r'^admin/', admin.site.urls),
     url(r'^keijiban/', include('keijiban.urls')),
