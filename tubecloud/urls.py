@@ -24,5 +24,9 @@ from django.conf.urls import url, include
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^/', include('keijiban.urls')),
+    '''
+    url(r'^admin/', admin.site.urls),
     url(r'^keijiban/', include('keijiban.urls')),
+    '''
 ]
