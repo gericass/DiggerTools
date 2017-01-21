@@ -5,8 +5,8 @@ from keijiban import twitter
 
 urlpatterns = [
    url(r'^$', views.kakikomi),
-   url(r'^results/$',views.results),
-   url(r'^ineeyo/$',views.inee),
+   url(r'^/results/$',views.results),
+   url(r'^/ineeyo/$',views.inee),
    '''
    url(r'^idinput/$', views.kakikomi),
    url(r'^idinput/results/$',views.results),
