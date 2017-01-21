@@ -21,9 +21,9 @@ def kakikomi(request):
       #link = get_template('results.html')
       #return link.render(request)#,{'form2':tweets}) #{'id':f}
       if q==0:
-       return HttpResponseRedirect('/results/')
+       return HttpResponseRedirect('/keijiban/results/')
       else:
-        return HttpResponseRedirect('/ineeyo/')
+        return HttpResponseRedirect('/keijiban/ineeyo/')
   else:
      f = idkakikomi()
 
