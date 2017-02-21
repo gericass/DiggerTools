@@ -10,6 +10,7 @@ from keijiban.twitter import tweet
 from django.http import HttpResponseRedirect
 from django.shortcuts import render
 from keijiban.forms import idkakikomi
+from tubecloud.settings import STATIC_URL
 
 def kakikomi(request):
   if request.method=='POST':
@@ -27,7 +28,7 @@ def kakikomi(request):
   else:
      f = idkakikomi()
 
-  return render(request,'templates.html',{'form1':f})
+  return render(request,'templates.html',{'form1':f,'STATIC_URL':STATIC_URL})
 
 
 def results(request,page):
