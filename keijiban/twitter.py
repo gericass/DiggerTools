@@ -195,8 +195,10 @@ class tweet:
        db = Tweet(twidata=t,twilink=l,twiurl=u) #'''id=i'''
        db.save()
 
-
-   uid = str(username)
+   if '@'in str(username):
+    uid = str(username).replace('@','')
+   else:
+    uid = str(username)
    db2 = ID(USERID = uid)
    db2.save()
 
