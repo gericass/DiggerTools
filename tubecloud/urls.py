@@ -26,7 +26,7 @@ from keijiban import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.kakikomi),
-    url(r'^results/$',views.results),
+    url(r'^results/(?P<page>\d+)/$',views.results),
     url(r'^ineeyo/$',views.inee),
     '''
     url(r'^admin/', admin.site.urls),

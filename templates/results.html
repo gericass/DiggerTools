@@ -5,6 +5,8 @@
 
     <link rel="stylesheet" type="text/css" href="{{STATIC_URL}}Style.css" />
     <meta charset="UTF-8">
+    <script src="http://www.geocities.jp/cometpunch468/jquery-3.1.1.min.js"></script>
+    <script src="http://www.geocities.jp/cometpunch468/jquery.infinitescroll.js"></script>
 
     <title>ツイート</title>
 
@@ -132,9 +134,9 @@
           <th>リンク</th>
       </tr>
      </thead>
-     <tbody>
+     <tbody id="content">
      {%  for tweet in tweets %}
-     <tr>
+     <tr class="scroll">
          <td scope="row", class = 'cell'>{{ tweet.twilink|safe }}</td>
          <td scope="row", class = 'text'>{{ tweet.twidata }}</td>
          <td scope="row", class = 'cell'><a style="vertical-align:middle; display: block; width: 100%; height: 100%" href="{{ tweet.twiurl|safe }}"target="_blank">{{ tweet.twiurl|safe }}</a></td>
@@ -142,5 +144,26 @@
      {% endfor %}
      </tbody>
  </table>
+
+<div class="navigation">
+    //nextSelector
+    <a href="https://salty-lake-16271.herokuapp.com/results/2/">next page?</a>
+    <!-- /.navigation --></div>
+<!-- /#content --></div>
+
+<script>
+    $(function(){
+        $('#content').infinitescroll({
+            navSelector  : ".navigation",
+            // ナビゲーション要素を指定します。
+            nextSelector : ".navigation a",
+            // ナビゲーションの「次へ」の要素を指定します。
+            itemSelector : "#content .scroll",
+            // 表示させる要素を指定します。
+            dataType : "html"
+            // 読み込むデータの形式を指定します。
+        });
+    });
+</script>
 </body>
 </html>

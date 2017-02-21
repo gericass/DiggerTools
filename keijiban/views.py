@@ -21,7 +21,7 @@ def kakikomi(request):
       #link = get_template('results.html')
       #return link.render(request)#,{'form2':tweets}) #{'id':f}
       if q==0:
-       return HttpResponseRedirect('/results/')
+       return HttpResponseRedirect('/results/1/')
       else:
         return HttpResponseRedirect('/ineeyo/')
   else:
@@ -30,13 +30,14 @@ def kakikomi(request):
   return render(request,'templates.html',{'form1':f})
 
 
-def results(request):
-    tweets = Tweet.objects.all().order_by('id')
+def results(request,page):
+    pg = int(page)
+    tweets = Tweet.objects.all().order_by('id')[(pg-1)*10:pg*10]
     #userid = ID.objects.all()
-
-
-    return render(request,'results.html',{'tweets':tweets})
-
+    if page==1:
+     return render(request,'results.html',{'tweets':tweets})
+    else:
+     return render(request,'results2.html',{'tweets':tweets},{'page':str(page)})
 
 def inee(request):
     return render(request,'inee.html',{})

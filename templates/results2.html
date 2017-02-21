@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Results</title>
+    {% load staticfiles %}
+
+    <link rel="stylesheet" type="text/css" href="{{STATIC_URL}}Style.css" />
+    <meta charset="UTF-8">
+    <script src="http://www.geocities.jp/cometpunch468/jquery-3.1.1.min.js"></script>
+    <script src="http://www.geocities.jp/cometpunch468/jquery.infinitescroll.js"></script>
+
+    <title>ツイート</title>
+
+</head>
+<body>
+<table class="type02">
+    <thead>
+    <tr>
+        <th>ツイートへのリンク</th>
+        <th>ツイート</th>
+        <th>リンク</th>
+    </tr>
+    </thead>
+    <tbody id="content">
+    {%  for tweet in tweets %}
+        <tr class="scroll">
+            <td scope="row", class = 'cell'>{{ tweet.twilink|safe }}</td>
+            <td scope="row", class = 'text'>{{ tweet.twidata }}</td>
+            <td scope="row", class = 'cell'><a style="vertical-align:middle; display: block; width: 100%; height: 100%" href="{{ tweet.twiurl|safe }}"target="_blank">{{ tweet.twiurl|safe }}</a></td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+
+<div class="navigation">
+    //nextSelector
+    <a href="infinitescrolltest{{ page }}.html">next page?</a>
+    <!-- /.navigation --></div>
+<!-- /#content --></div>
+</body>
+</html>
