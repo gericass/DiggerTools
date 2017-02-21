@@ -28,8 +28,5 @@ urlpatterns = [
     url(r'^$', views.kakikomi),
     url(r'^results/(?P<page>\d+)/$',views.results),
     url(r'^ineeyo/$',views.inee),
-    '''
-    url(r'^admin/', admin.site.urls),
-    url(r'^keijiban/', include('keijiban.urls')),
-    '''
+
 ]
