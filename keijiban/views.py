@@ -33,11 +33,11 @@ def kakikomi(request):
 def results(request,page):
     pg = int(page)
     tweets = Tweet.objects.all().order_by('id')[(pg-1)*10:pg*10]
-    #userid = ID.objects.all()
+    userid = ID.objects.first()
     if pg==1:
-     return render(request,'results.html',{'tweets':tweets},{'page':str(pg+1)})
+     return render(request,'results.html',{'tweets':tweets,'page':str(pg+1),'userid':userid})#,{'page':str(pg+1)},{'userid':})
     else:
-     return render(request,'results2.html',{'tweets':tweets},{'page':str(pg+1)})
+     return render(request,'results2.html',{'tweets':tweets,'page':str(pg+1)})#,{'page':str(pg+1)})
 
 def inee(request):
     return render(request,'inee.html',{})

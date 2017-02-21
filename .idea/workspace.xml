@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38ec5e0a-2782-4804-8e7b-7d3554f3027c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/results.html" afterPath="$PROJECT_DIR$/templates/results.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/results2.html" afterPath="$PROJECT_DIR$/templates/results2.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -54,8 +54,8 @@
       <file leaf-file-name="results2.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/results2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+            <state relative-caret-position="-79">
+              <caret line="18" column="21" lean-forward="true" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -64,8 +64,8 @@
       <file leaf-file-name="results.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/results.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="21144" lean-forward="false" selection-start-line="8" selection-start-column="21144" selection-end-line="8" selection-end-column="21144" />
+            <state relative-caret-position="-1521">
+              <caret line="23" column="54" lean-forward="true" selection-start-line="23" selection-start-column="54" selection-end-line="23" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -183,9 +183,9 @@
         <option value="$PROJECT_DIR$/keijiban/twitter.py" />
         <option value="$PROJECT_DIR$/tubecloud/settings.py" />
         <option value="$PROJECT_DIR$/tubecloud/urls.py" />
-        <option value="$PROJECT_DIR$/templates/results2.html" />
         <option value="$PROJECT_DIR$/keijiban/views.py" />
         <option value="$PROJECT_DIR$/templates/results.html" />
+        <option value="$PROJECT_DIR$/templates/results2.html" />
       </list>
     </option>
   </component>
@@ -1051,12 +1051,12 @@
       <workItem from="1485513773533" duration="661000" />
       <workItem from="1485599587627" duration="702000" />
       <workItem from="1485658994038" duration="8084000" />
-      <workItem from="1487633677012" duration="3653000" />
+      <workItem from="1487633677012" duration="4624000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="260919000" />
+    <option name="totallyTimeSpent" value="261890000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -1430,14 +1430,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/results2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/keijiban/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -1448,10 +1440,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/results2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-79">
+          <caret line="18" column="21" lean-forward="true" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/results.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="21144" lean-forward="false" selection-start-line="8" selection-start-column="21144" selection-end-line="8" selection-end-column="21144" />
+        <state relative-caret-position="-1521">
+          <caret line="23" column="54" lean-forward="true" selection-start-line="23" selection-start-column="54" selection-end-line="23" selection-end-column="54" />
           <folding />
         </state>
       </provider>
