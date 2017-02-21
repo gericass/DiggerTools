@@ -21,7 +21,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # いじった
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 # ここまで
-
+OP_DIR = os.path.join(BASE_DIR, 'keijiban')
 
 
 # Quick-start development settings - unsuitable for production
@@ -69,7 +69,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            #os.path.join(BASE_DIR, 'templates'),  # BASE_DIRだった
+            os.path.join(OP_DIR, 'templates'),  # BASE_DIRだった
             #os.path.join(BASE_DIR, "static"),  # BASE_DIR
         ],
         'APP_DIRS': True,
