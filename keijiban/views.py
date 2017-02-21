@@ -34,10 +34,10 @@ def results(request,page):
     pg = int(page)
     tweets = Tweet.objects.all().order_by('id')[(pg-1)*10:pg*10]
     #userid = ID.objects.all()
-    if page==1:
-     return render(request,'results.html',{'tweets':tweets})
+    if pg==1:
+     return render(request,'results.html',{'tweets':tweets},{'page':str(pg+1)})
     else:
-     return render(request,'results2.html',{'tweets':tweets},{'page':str(page)})
+     return render(request,'results2.html',{'tweets':tweets},{'page':str(pg+1)})
 
 def inee(request):
     return render(request,'inee.html',{})
