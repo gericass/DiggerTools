@@ -37,7 +37,7 @@ def results(request,page):
     if page==1:
      return render(request,'results.html',{'tweets':tweets})
     else:
-     return render(request,'results2.html',{'tweets':tweets},{'page':str(page+1)})
+     return render(request,'results2.html',{'tweets':tweets},{'page':str(page)})
 
 def inee(request):
     return render(request,'inee.html',{})
