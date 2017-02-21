@@ -45,10 +45,9 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-
     'django.contrib.staticfiles',
     'keijiban',
-    'gunicorn',
+    #'gunicorn',
 ]
 
 MIDDLEWARE = [
@@ -153,7 +152,7 @@ ALLOWED_HOSTS = ['*']
 # Static asset configuration
 
 
-STATIC_ROOT =  os.path.join(OP_DIR, 'staticfiles') # PROJECT_ROOTはBASE_DIRだった os.path.join(PROJECT_ROOT, 'staticfiles')
+STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles') # PROJECT_ROOTはBASE_DIRだった os.path.join(PROJECT_ROOT, 'staticfiles')
 
 STATIC_URL = '/static/'
 
