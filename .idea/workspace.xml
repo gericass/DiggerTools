@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="38ec5e0a-2782-4804-8e7b-7d3554f3027c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/keijiban/templates/inee.html" afterPath="$PROJECT_DIR$/keijiban/templates/inee.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/keijiban/templates/results.html" afterPath="$PROJECT_DIR$/keijiban/templates/results.html" />
-    </list>
+    <list default="true" id="38ec5e0a-2782-4804-8e7b-7d3554f3027c" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -127,8 +124,8 @@
       <file leaf-file-name="inee.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/keijiban/templates/inee.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state relative-caret-position="193">
+              <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -1052,12 +1049,12 @@
       <workItem from="1485658994038" duration="8084000" />
       <workItem from="1487633677012" duration="9134000" />
       <workItem from="1487657847256" duration="11342000" />
-      <workItem from="1487793603317" duration="4621000" />
+      <workItem from="1487793603317" duration="4776000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="282363000" />
+    <option name="totallyTimeSpent" value="282518000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -1393,8 +1390,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/keijiban/templates/inee.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state relative-caret-position="193">
+          <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
           <folding />
         </state>
       </provider>
