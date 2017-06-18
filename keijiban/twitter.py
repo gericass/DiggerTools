@@ -16,7 +16,7 @@ class tweet:
 
 
  def tweetimport(username):
-  CK ="" #Consumer Key
+  CK =""  #Consumer Key
   CS =""         # Consumer Secret
   AT ="" # Access Token
   AS =""    # Accesss Token Secert
