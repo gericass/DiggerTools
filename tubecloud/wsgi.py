@@ -25,6 +25,8 @@ application = Cling(get_wsgi_application())
 
 '''
 import os
+import keijiban.bach_script as logger
+import time
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "tubecloud.settings")
 
@@ -36,3 +38,7 @@ from whitenoise.django import DjangoWhiteNoise
 
 application = get_wsgi_application()
 application = DjangoWhiteNoise(application)
+
+while True:
+    logger.access()
+    time.sleep(10)

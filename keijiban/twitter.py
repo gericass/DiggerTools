@@ -16,10 +16,10 @@ class tweet:
 
 
  def tweetimport(username):
-  CK =""  #Consumer Key
-  CS =""         # Consumer Secret
-  AT ="" # Access Token
-  AS =""    # Accesss Token Secert
+  CK = 'PT8KnQQMiN4zkkHRphTMkOBeV'                        # Consumer Key
+  CS = 'c3XCPPDfxGU5thWFATcIhrUfJXVmA9nrHSAt1AnsYzyaZuu6Mi'         # Consumer Secret
+  AT = '535210488-eF2rg8LdBgLvfRfTux1m3fvG3XxvwpwfzAVWY02N' # Access Token
+  AS = '0H871S8YSmKhusbOdMYF2odaz0XPZCO2qk2WTdd5suwMu'         # Accesss Token Secert
 
   auth = tweepy.OAuthHandler(CK, CS)
   auth.set_access_token(AT, AS)
