@@ -27,8 +27,7 @@ application = Cling(get_wsgi_application())
 import os
 import keijiban.bach_script as logger
 import time
-from multiprocessing import Pool
-import multiprocessing as multi
+import threading
 
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "tubecloud.settings")
@@ -43,6 +42,5 @@ application = get_wsgi_application()
 application = DjangoWhiteNoise(application)
 
 
-p = Pool(multi.cpu_count())
-p.map(logger.access(),list(range(2)))
-
+t = threading.Thread(target=logger.access)
+t.start()
