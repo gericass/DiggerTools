@@ -43,4 +43,4 @@ application = DjangoWhiteNoise(application)
 
 
 t = threading.Thread(target=logger.access)
-t.start()
+#t.start()
