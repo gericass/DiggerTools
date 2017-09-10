@@ -1,12 +1,11 @@
 import requests
 import time
+from datetime import datetime
 
 def access():
     print("logged...")
-    cnt = 0
     while True:
-        cnt += 1
         requests.get("https://salty-lake-16271.herokuapp.com/")
         print("Logged!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
-        print(cnt)
+        print(datetime.now())
         time.sleep(10)
